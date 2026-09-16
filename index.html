@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>silvialistudio — portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;900&family=Cinzel+Decorative:wght@700;900&family=Caveat:wght@700&family=Bodoni+Moda:wght@400;500&family=Big+Shoulders+Display:wght@800&family=Space+Grotesk:wght@700&family=Italiana&family=Cormorant:wght@300&family=Marcellus&family=Tenor+Sans&family=Montserrat:wght@100;400;600;700&family=Lexend+Giga:wght@100;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css?v=9999">
+</head>
+<body>
+
+<div class="welcome-popup" id="welcome-popup">
+  <div class="welcome-popup-box">
+    <button class="welcome-popup-close" id="welcome-popup-close">×</button>
+
+    <p class="welcome-popup-label">A SMALL NOTE</p>
+
+    <p class="welcome-popup-text">
+      Click any photograph to view it.<br>
+      Click the enlarged photograph again to read the story behind it.
+    </p>
+
+    <button class="welcome-popup-button" id="welcome-popup-button">
+      GOT IT
+    </button>
+  </div>
+</div>
+
+
+
+  <header class="masthead">
+    <div class="wordmark-band">
+      <a href="#photography" class="wordmark">portfolio</a>
+    </div>
+    <div class="rule"></div>
+    <nav class="primary">
+      <a href="#photography" class="active">Photography</a>
+      <a href="#design">Graphic Design</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="rule thin"></div>
+  </header>
+
+  <section id="photography" class="section panel active">
+    <div class="wrap"><div class="plate-grid" id="photo-grid"></div></div>
+  </section>
+
+  <section id="design" class="section alt panel">
+    <div class="wrap"><div class="design-project-grid" id="design-grid"></div></div>
+  </section>
+
+  <section id="about" class="section wrap panel" style="padding: 72px 0;">
+    <div class="section-head"><h2>About</h2></div>
+    <div class="about-grid">
+      <div class="plate-media about-portrait placeholder-3"></div>
+      <div class="about-body">
+        <p>I'm Silvia, and I enjoy exploring both photography and graphic design. I'm especially drawn to color, light, composition, and the small visual details that can completely change how something feels. I'm always experimenting with new ways to turn things I notice in everyday life into something visual.</p>
+        <p>This portfolio is a collection of work I've made over the past few years, from photography projects to graphic design experiments. A lot of it comes from simply noticing something interesting and wanting to explore it further. I'm still learning and experimenting, and I'm excited to keep developing these interests through new projects and collaborations in college.</p>      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt panel">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="contact-lead">Thanks for taking a look at my work! Feel free to reach out if you'd like to connect or talk more about any of my projects.</p>      </div>
+      <ul class="contact-list">
+        <li>
+          <span class="label">Email</span>
+          <a href="mailto:sl3744@cornell.edu">sl3744@cornell.edu</a>
+        </li>
+        <li>
+          <span class="label">Instagram</span>
+          <a href="https://www.instagram.com/s1lv12l1/" target="_blank">
+            @s1lv12l1
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <span>© <span id="year"></span> silvialistudio</span>
+  </footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">Close ✕</button>
+  <button id="lightbox-prev" class="lightbox-nav prev">‹</button>
+
+  <div class="lightbox-inner" id="lightbox-inner">
+    <div class="lightbox-frame" id="lightbox-frame">
+      <div class="lightbox-media-wrap" id="lightbox-media-wrap">
+        <div class="plate-media" id="lightbox-media">
+          <div id="lightbox-thought" class="thought-overlay"></div>
+        </div>
+      </div>
+      <div class="lightbox-cap">
+        <span id="lightbox-title"></span>
+        <span id="lightbox-meta"></span>
+      </div>
+    </div>
+  </div>
+
+  <button id="lightbox-next" class="lightbox-nav next">›</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
